@@ -8,6 +8,13 @@ Working on replicate most (if not 100%) of Google's Mirror API using Objective-C
 To use the example below, you must first have implemented a way to authenticate the API using Google OAuth 2.
 
 
+Dependencies:
+-------
+
+[AFNetworking 2.0](https://www.google.com/search?client=safari&rls=en&q=afnetworking+2.0&ie=UTF-8&oe=UTF-8) for the network calls.
+
+
+
 Example:
 -------
 
@@ -36,3 +43,9 @@ Insert the timeline:
     self.timelineService = [[RATimelineService alloc] initWithAccessToken:token];
     
     [self.timelineService insert:timelineItem];
+    
+    
+To Do:
+-------
+
+A simple abstraction to handle Google's OAuth mobile device flow.
