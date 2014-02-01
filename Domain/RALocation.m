@@ -10,4 +10,21 @@
 
 @implementation RALocation
 
+- (NSDictionary *)toDictionary{
+    NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] init];
+    if (self.address) {
+        dictionary[@"address"] = self.address;
+    }
+    
+    if (self.latitude) {
+        dictionary[@"latitude"] = [NSNumber numberWithDouble:self.latitude];
+    }
+    
+    if (self.longitude) {
+        dictionary[@"longitude"] = [NSNumber numberWithDouble:self.longitude];
+    }
+    
+    return dictionary;
+}
+
 @end

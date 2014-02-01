@@ -7,7 +7,28 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RAEntityProtocol.h"
 
-@interface RATimeline : NSObject
+@class RALocation;
+
+@interface RATimeline : NSObject <RAEntityProtocol>
+
+/*!
+ HTML content for this item. If both text and html are provided for an item, the html will be rendered in the timeline.
+ */
+@property (strong, nonatomic) NSString *text;
+
+
+@property (strong, nonatomic) NSString *html;
+
+
+
+@property (strong, nonatomic) NSArray *menuItems;
+
+
+/*!
+ The geographic location associated with this item.
+ */
+@property (strong, nonatomic) RALocation *location;
 
 @end

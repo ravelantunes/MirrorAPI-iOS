@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RAEntityProtocol.h"
 
 /*!
  A geographic location that can be associated with a timeline item.
@@ -25,7 +26,7 @@
  
  
  */
-@interface RALocation : NSObject
+@interface RALocation : NSObject <RAEntityProtocol>
 
 
 /*!
