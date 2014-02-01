@@ -37,9 +37,16 @@ typedef enum {
  */
 @property (strong, nonatomic) NSString* id;
 
+/*!
+ Controls the behavior when the user picks the menu option. Allowed values are defined by RAActionType enum.
+ */
 @property (nonatomic) RAActionType action;
 
-
+/*!
+ A generic payload whose meaning changes depending on this MenuItem's action.
+ - When the action is OPEN_URI, the payload is the URL of the website to view.
+ - When the action is PLAY_VIDEO, the payload is the streaming URL of the video
+ */
 @property (strong, nonatomic) NSString *payload;
 
 @end

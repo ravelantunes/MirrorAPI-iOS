@@ -11,7 +11,7 @@
 
 @class RALocation;
 
-@interface RATimeline : NSObject <RAEntityProtocol>
+@interface RATimelineItem : NSObject <RAEntityProtocol>
 
 /*!
  HTML content for this item. If both text and html are provided for an item, the html will be rendered in the timeline.
@@ -19,10 +19,15 @@
 @property (strong, nonatomic) NSString *text;
 
 
+/*!
+ HTML content for this item. If both text and html are provided for an item, the html will be rendered in the timeline.
+ */
 @property (strong, nonatomic) NSString *html;
 
 
-
+/*!
+ A list of menu items that will be presented to the user when this item is selected in the timeline.
+ */
 @property (strong, nonatomic) NSArray *menuItems;
 
 

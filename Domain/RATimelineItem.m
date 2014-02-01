@@ -6,11 +6,15 @@
 //  Copyright (c) 2014 Ravel Antunes. All rights reserved.
 //
 
-#import "RATimeline.h"
+#import "RATimelineItem.h"
 #import "RAMenuItem.h"
 #import "RALocation.h"
 
-@implementation RATimeline
+@implementation RATimelineItem
+
+- (id)initWithDictionary:(NSDictionary *)dictionary{
+    return nil;
+}
 
 - (NSDictionary *)toDictionary{
     

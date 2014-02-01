@@ -8,7 +8,7 @@
 
 #import "RATimelineService.h"
 #import "AFNetworking.h"
-#import "RATimeline.h"
+#import "RATimelineItem.h"
 
 @interface RATimelineService ()
 
@@ -39,7 +39,7 @@
 
 
 #pragma mark - API Calls
-- (void)insert:(RATimeline*)timeline{
+- (void)insert:(RATimelineItem*)timeline{
 
     //Timeline enpoint
     NSString *urlString = @"https://www.googleapis.com/mirror/v1/timeline";

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class RAGoogleOAuthSettings, RATimeline;
+@class RAGoogleOAuthSettings, RATimelineItem;
 
 
 /*!
@@ -34,6 +34,6 @@
 /*!
  Inserts a timeline item.
  */
-- (void)insert:(RATimeline*)timeline;
+- (void)insert:(RATimelineItem*)timeline;
 
 @end

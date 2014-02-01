@@ -9,7 +9,7 @@
 //#ifndef SendToGlass_RAMirrorAPI_h
 //#define SendToGlass_RAMirrorAPI_h
 
-#import "RATimeline.h"
+#import "RATimelineItem.h"
 #import "RALocation.h"
 #import "RAMenuItem.h"
 

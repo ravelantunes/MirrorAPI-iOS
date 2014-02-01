@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+/*!
+ Object to encapsulate Google OAuth2 settings.
+ */
 @interface RAGoogleOAuthSettings : NSObject
 
 @property (strong, nonatomic) NSString *ClientID;

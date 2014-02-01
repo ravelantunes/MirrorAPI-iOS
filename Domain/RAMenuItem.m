@@ -10,11 +10,14 @@
 
 @implementation RAMenuItem
 
+- (id)initWithDictionary:(NSDictionary *)dictionary{
+    return nil;
+}
+
 - (NSDictionary *)toDictionary{
     NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] init];
     
     dictionary[@"action"] = [self actionTypeString:self.action];
-//    [dictionary setObject:@"action" forKey:[self actionTypeString:self.action]];
     
     if (self.payload) {
         dictionary[@"payload"] = self.payload;

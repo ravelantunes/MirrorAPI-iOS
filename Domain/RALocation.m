@@ -10,6 +10,10 @@
 
 @implementation RALocation
 
+- (id)initWithDictionary:(NSDictionary *)dictionary{
+    return nil;
+}
+
 - (NSDictionary *)toDictionary{
     NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] init];
     if (self.address) {

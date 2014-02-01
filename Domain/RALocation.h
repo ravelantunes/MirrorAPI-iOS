@@ -23,7 +23,7 @@
      "displayName": string,
      "address": string
  }
- 
+
  
  */
 @interface RALocation : NSObject <RAEntityProtocol>
