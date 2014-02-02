@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+
+@protocol RATimelineServiceDelegate <NSObject>
+
+- (void)requestDidSucceed:(id)result;
+- (void)requestDidFail:(NSError*)error;
+
+@end
+
 @class RAGoogleOAuthSettings, RATimelineItem;
 
 
@@ -17,6 +25,8 @@
  @see RATimeline
  */
 @interface RATimelineService : NSObject
+
+@property (weak, nonatomic) id<RATimelineServiceDelegate> delegate;
 
 /*!
  Acess token provided by google to authenticate the API calls.

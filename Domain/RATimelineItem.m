@@ -9,6 +9,7 @@
 #import "RATimelineItem.h"
 #import "RAMenuItem.h"
 #import "RALocation.h"
+#import "RANotification.h"
 
 @implementation RATimelineItem
 
@@ -39,6 +40,11 @@
     if (self.location) {
         dictionary[@"location"] = [self.location toDictionary];
     }
+    
+    if (self.notification) {
+        dictionary[@"notification"] = [self.notification toDictionary];
+    }
+        
     
     return dictionary;
 }

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "RAEntityProtocol.h"
 
-@class RALocation;
+@class RALocation, RANotification;
 
 @interface RATimelineItem : NSObject <RAEntityProtocol>
 
@@ -35,5 +35,7 @@
  The geographic location associated with this item.
  */
 @property (strong, nonatomic) RALocation *location;
+
+@property (strong, nonatomic) RANotification *notification;
 
 @end

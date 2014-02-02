@@ -58,11 +58,13 @@
     [self.manager POST:urlString parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         NSLog(@"Response: %@", responseObject);
+        [self.delegate requestDidSucceed:responseObject];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
         NSLog(@"Response: %@", operation.responseString);
         NSLog(@"Error: %@", error.localizedDescription);
+        [self.delegate requestDidFail:error];
         
     }];
 

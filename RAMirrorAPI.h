@@ -12,6 +12,7 @@
 #import "RATimelineItem.h"
 #import "RALocation.h"
 #import "RAMenuItem.h"
+#import "RANotification.h"
 
 @interface MirrorApi : NSObject
 
