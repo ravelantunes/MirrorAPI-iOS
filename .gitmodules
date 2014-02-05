@@ -1,0 +1,3 @@
+[submodule "MirrorAPI-iOS/AFNetworking"]
+	path = MirrorAPI-iOS/AFNetworking
+	url = https://github.com/AFNetworking/AFNetworking.git
