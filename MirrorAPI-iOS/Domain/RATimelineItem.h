@@ -14,6 +14,11 @@
 @interface RATimelineItem : NSObject <RAEntityProtocol>
 
 /*!
+ The ID of the timeline item. This is unique within a user's timeline.
+ */
+@property (strong, nonatomic) NSString* id;
+
+/*!
  HTML content for this item. If both text and html are provided for an item, the html will be rendered in the timeline.
  */
 @property (strong, nonatomic) NSString *text;

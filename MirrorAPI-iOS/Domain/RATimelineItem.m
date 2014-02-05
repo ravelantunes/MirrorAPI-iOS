@@ -20,6 +20,10 @@
 - (NSDictionary *)toDictionary{
     
     NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] init];
+    
+    if (self.id) {
+        dictionary[@"id"] = self.id;
+    }
 
     if (self.text) {
         dictionary[@"text"] = self.text;
@@ -33,6 +37,7 @@
     for (RAMenuItem *menuItem in self.menuItems) {
         [menuItems addObject:[menuItem toDictionary]];
     }
+    
     if (menuItems.count) {
         dictionary[@"menuItems"] = menuItems;
     }
