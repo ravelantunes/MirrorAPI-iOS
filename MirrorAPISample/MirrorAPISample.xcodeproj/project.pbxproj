@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5083231418A1F1F0005E2F30 /* RALocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5083231318A1F1F0005E2F30 /* RALocationTests.m */; };
 		80214E6018A1E58A00B7B53C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80214E5F18A1E58A00B7B53C /* Foundation.framework */; };
 		80214E6218A1E58A00B7B53C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80214E6118A1E58A00B7B53C /* CoreGraphics.framework */; };
 		80214E6418A1E58A00B7B53C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80214E6318A1E58A00B7B53C /* UIKit.framework */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5083231318A1F1F0005E2F30 /* RALocationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RALocationTests.m; sourceTree = "<group>"; };
 		80214E5C18A1E58A00B7B53C /* MirrorAPISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MirrorAPISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80214E5F18A1E58A00B7B53C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		80214E6118A1E58A00B7B53C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -281,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				80214FD418A1E7B700B7B53C /* RATimelineItemTests.m */,
+				5083231318A1F1F0005E2F30 /* RALocationTests.m */,
 			);
 			name = Domain;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80214FD518A1E7B700B7B53C /* RATimelineItemTests.m in Sources */,
+				5083231418A1F1F0005E2F30 /* RALocationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,6 +619,7 @@
 				80214E9018A1E58A00B7B53C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80214FD018A1E75C00B7B53C /* Build configuration list for PBXNativeTarget "MirrorAPISample Tests" */ = {
 			isa = XCConfigurationList;
@@ -623,6 +628,7 @@
 				80214FD218A1E75C00B7B53C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -30,13 +30,21 @@
 
 - (void)testToDictionary{
     
+    //Create timeline object
     RATimelineItem *timelineItem = [[RATimelineItem alloc] init];
     
-    timelineItem.text = @"test";
+    //Set properties
+    timelineItem.id = @"12345";
+    timelineItem.text = @"test text";
+    timelineItem.html = @"test html";
     
+    //Transform to dictionary
     NSDictionary *dictionaryRepresentation = [timelineItem toDictionary];
     
-    XCTAssert([dictionaryRepresentation objectForKey:@"text"], @"Key text is non existent.");
+    XCTAssert(dictionaryRepresentation[@"id"], @"Key id is non existent.");
+    XCTAssert(dictionaryRepresentation[@"text"], @"Key text is non existent.");
+    XCTAssert(dictionaryRepresentation[@"html"], @"Key html is non existent.");
+    
     
 }
 
