@@ -17,7 +17,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    
+    //    scope = @"https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fglass.location+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fglass.timeline+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email";
+    
 }
 
 - (void)didReceiveMemoryWarning

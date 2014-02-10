@@ -13,8 +13,8 @@
  */
 @interface RAGoogleOAuthSettings : NSObject
 
-@property (strong, nonatomic) NSString *ClientID;
-@property (strong, nonatomic) NSString *ClientSecret;
-@property (strong, nonatomic) NSString *RedirectURI;
+@property (strong, nonatomic) NSString *clientID;
+@property (strong, nonatomic) NSString *clientSecret;
+@property (strong, nonatomic) NSString *redirectURI;
 
 @end

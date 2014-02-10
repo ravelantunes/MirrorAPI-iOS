@@ -36,6 +36,7 @@
 		80214FC318A1E75C00B7B53C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80214E5F18A1E58A00B7B53C /* Foundation.framework */; };
 		80214FC418A1E75C00B7B53C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80214E6318A1E58A00B7B53C /* UIKit.framework */; };
 		80214FD518A1E7B700B7B53C /* RATimelineItemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80214FD418A1E7B700B7B53C /* RATimelineItemTests.m */; };
+		80B5A9BA18A89CE100BCE9EB /* RAOAuthService.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B5A9B918A89CE100BCE9EB /* RAOAuthService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,8 @@
 		80214FC018A1E75C00B7B53C /* MirrorAPISample Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MirrorAPISample Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80214FC118A1E75C00B7B53C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		80214FD418A1E7B700B7B53C /* RATimelineItemTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATimelineItemTests.m; sourceTree = "<group>"; };
+		80B5A9B818A89CE100BCE9EB /* RAOAuthService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAOAuthService.h; sourceTree = "<group>"; };
+		80B5A9B918A89CE100BCE9EB /* RAOAuthService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAOAuthService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +278,8 @@
 			children = (
 				80214F4418A1E69700B7B53C /* RATimelineService.h */,
 				80214F4518A1E69700B7B53C /* RATimelineService.m */,
+				80B5A9B818A89CE100BCE9EB /* RAOAuthService.h */,
+				80B5A9B918A89CE100BCE9EB /* RAOAuthService.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -389,6 +394,7 @@
 				80214F9618A1E69700B7B53C /* RATimelineService.m in Sources */,
 				80214E7618A1E58A00B7B53C /* ViewController.m in Sources */,
 				80214F4918A1E69700B7B53C /* AFHTTPRequestOperationManager.m in Sources */,
+				80B5A9BA18A89CE100BCE9EB /* RAOAuthService.m in Sources */,
 				80214F4B18A1E69700B7B53C /* AFNetworkReachabilityManager.m in Sources */,
 				80214F9418A1E69700B7B53C /* RANotification.m in Sources */,
 				80214F4F18A1E69700B7B53C /* AFURLResponseSerialization.m in Sources */,
